@@ -1,3 +1,7 @@
+/* * {
+    border: 1px solid #f00 !important;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -313,7 +317,7 @@ canvas {
 }
 
 .contact__item {
-    margin: 35px;
+    margin: 35px 25px;
 }
 
 .contact__link {
@@ -432,9 +436,8 @@ canvas {
     }
     .contact__item {
         margin: 35px;
-        text-align: center;
         border: 1px dashed;
-        padding: 10px 20px 10px 60px;
+        padding: 10px 10px 10px 50px;
     }
     .contact__title {
         margin-bottom: 0;
