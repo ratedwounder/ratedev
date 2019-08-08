@@ -21,5 +21,15 @@ $(document).ready(function () {
 });
 
 $(function () {
-    $('.preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
+    $('.preloader').find('i').fadeOut().end().delay(1000).fadeOut('slow');
+});
+
+$(".parts").click(function () {
+    $(".service__wrapper").toggle();
+    $(".repair__wrapper").hide();
+});
+
+$(".repair").click(function () {
+    $(".repair__wrapper").toggle();
+    $(".service__wrapper").hide();
 });

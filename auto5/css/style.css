@@ -268,7 +268,6 @@ canvas {
 .service__title {
     margin-top: 50px;
     text-align: center;
-    margin-bottom: 80px;
     color: #828282;
 }
 
@@ -276,10 +275,11 @@ canvas {
     height: 2px;
     background-color: #FF8F00;
     margin-bottom: 130px;
+    margin-top: 80px;
 }
 
 .service__menu {
-    margin-bottom: 130px;
+    margin-bottom: 40px;
 }
 
 .service__btn {
@@ -316,29 +316,114 @@ canvas {
     border: 3px solid #FF8F00;
     color: #FF8F00;
     cursor: pointer;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.service__btn:active {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
 }
 
 .service__btn:hover h2 {
     color: #FF8F00;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .service__btn:hover svg {
     fill: #FF8F00;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -o-transition: all 2s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.sub__title {
+    text-align: center;
+    color: #AEACAC;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.repair__wrapper,
+.service__wrapper {
+    width: 100%;
+    border: 2px #FF8F00 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 0;
+    display: none;
+}
+
+.repair__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.repair__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.rmenu__item {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 25px;
+}
+
+.repair__item {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.repair__text {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.repair__iconimg {
+    width: 45px;
+    height: 45px;
+}
+
+.rmenu__item a {
+    color: #FF8F00;
+    border-bottom: 2px solid #FF8F00;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.repair__container {
+    width: 100%;
+    border: 2px #FF8F00 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 0;
 }
 
 .price {
@@ -520,6 +605,7 @@ canvas {
     .service__menu {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
     }
     .service__line {
         margin-bottom: 50px;
