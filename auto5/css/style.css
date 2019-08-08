@@ -371,7 +371,6 @@ canvas {
 .repair__menu {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .repair__list {
@@ -561,6 +560,9 @@ canvas {
     }
     .contact__line {
         display: none;
+    }
+    .repair__menu {
+        flex-wrap: wrap;
     }
 }
 
