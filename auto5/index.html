@@ -246,10 +246,10 @@
             </div>
             <div class="form__block">
                 <div class="row">
-                    <form class="form col-lg-6 m-auto" action="#">
-                            <input class="form__input" type="text" placeholder="имя">
-                            <input class="form__input" type="tel" placeholder="номер">
-                            <textarea class="form__input" cols="25" rows="10" placeholder="сообщение"></textarea>
+                    <form class="form col-lg-6 m-auto" action="telegram.php" method="POST">
+                            <input class="form__input" type="text" name="user_name" placeholder="имя">
+                            <input class="form__input" type="tel" name="user_phone" placeholder="номер">
+                            <textarea class="form__input" cols="25" name="user_msg" rows="10" placeholder="сообщение"></textarea>
                             <button class="form__btn" type="submit">Узнать!</button>
                     </form>
                 </div>
