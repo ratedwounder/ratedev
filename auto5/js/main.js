@@ -10,6 +10,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    particlesJS.load('particles-js', 'particles/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+});
+
+$(document).ready(function () {
     $(".start").on("click", "button", function (event) {
         event.preventDefault();
         var id = $(this).attr('action'),
@@ -40,4 +46,12 @@ $(".repair").click(function () {
         scrollTop: 1400
     }, 1000);
     $(".service__wrapper").hide();
+});
+
+$(".btn__complete").click(function () {
+    $(".search__result").show();
+    event.preventDefault();
+    $('body,html').animate({
+        scrollTop: 1300
+    }, 1000);
 });

@@ -347,6 +347,69 @@ canvas {
     -o-transition: all 0.3s ease;
 }
 
+.service__catalog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand__wrapper,
+.model__wrapper,
+.year__wrapper {
+    margin: 25px 0;
+    border: 1px solid #FF8F00;
+    overflow: hidden;
+    height: 34px;
+    background: url(/auto5/img/down-arrow.png) no-repeat right;
+    background-size: 15px 15px;
+    width: 250px;
+    background-position-x: 95%;
+}
+
+.catalog__menu {
+    color: #FF8F00;
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding-left: 10px;
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.btn__complete {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 250px;
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #FF8F00;
+    border: 0;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.search__result {
+    width: 80%;
+    border: 1px #FF8F00 dotted;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 40px auto;
+    display: none;
+}
+
 .sub__title {
     text-align: center;
     color: #AEACAC;
@@ -357,7 +420,11 @@ canvas {
 
 .repair__wrapper,
 .service__wrapper {
+    position: relative;
     width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 1;
     border: 2px #FF8F00 solid;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -636,5 +703,4 @@ canvas {
         justify-content: center;
         align-items: center;
     }
-    
 }
